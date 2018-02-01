@@ -1,0 +1,45 @@
+
+#mrf{
+  background-color:rgba(30, 31, 45, 0.705);
+  height: 1000px;
+}
+#mrf1{
+  border-bottom-width: 1px ;
+  border-bottom-color: rgba(244,244,255,0.25);
+}
+.navbar-toggle{
+  border-color: white !important;
+}
+.icon-bar{
+  background-color: white;
+}
+.carousel{
+  width: 540px;
+}
+.container{
+  padding-left: 3px !important;
+}
+.aa1{
+  display: inline-block;
+  border-right: 1px;
+  border-right-color: rgba(244,244,255,0.25);
+  border-right-style: dashed;
+  height: 350px;
+  width: 500px;
+  margin-left: 60px;
+}
+.aa2{
+  display: inline-block;
+  border: 1px ;
+  border-color: rgba(244,244,255,0.25);
+  border-style: solid;
+  height: 350px;
+  width: 550px;
+  border-radius: 10px;
+  margin-left: 60px;
+}
+
+h3,#aa2{
+  float: left;
+  color: white;
+}

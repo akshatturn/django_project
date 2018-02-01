@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="shortcut icon" href="{%static "images/BR Logo.ico"%}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <div>
+      <section >
+           <div style="display:inline-block;">
+             <h1 style="border-bottom:1px solid black;width:825px;"><span style="margin-left:20px;">About</span></h1>
+             <p style="margin-left:15px;">There is a lot to write about you and Ziuzė here. We will write here later.</p>
+           </div>
+           <div class="w3-content w3-display-container" style="max-width:480px;min-height:653px;position:absolute;right:0px;display:inline-block;">
+              <img class="mySlides" src="{% static "images/abt.jpg" %}" style="max-width:480px;min-height:653px;">
+              <img class="mySlides" src="{% static "images/dog.jpeg" %}" style="width:100%;">
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+            }
+            </script>
+      </section>
+    </div>
+  </body>
+</html>
